@@ -1,6 +1,6 @@
 <style>
   template-vd {
-    display: none;
+    display: block;
   }
   template-vd[resolved] {
     display: block;
@@ -10,20 +10,4 @@
   }
 </style>
 
-<script>
-  !(function() {
-    var proto = Object.create(HTMLElement.prototype)
-
-    proto.createdCallback  = function() {
-
-    }
-
-    proto.attachedCallback = function() {
-
-    }
-
-    document.registerElement("template-vd", {
-      prototype: proto
-    });
-  })();
-</script>
+<script src='./index.js'></script>

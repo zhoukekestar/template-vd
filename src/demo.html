@@ -2,12 +2,12 @@
 <html>
 <head>
   <title>template-vd demo</title>
-  <script src='index.js'></script>
+  <link rel="import" href="./index.html">
 </head>
 <body>
-  <button id="btn">btn</button>
+  <button id="btn">change data</button>
   <template-vd id='vd'>
-    <ul><li repeat='item, index in items'>{{index}}:{{item}}</li></ul>
+    <ul><li repeat='item, index in items'>{{index}} : <b>{{item}}</b></li></ul>
   </template-vd>
 
   <script>
@@ -16,11 +16,12 @@
         , i = 0
         , len = (Math.random() * 5 + 5) >> 0
 
-      for (var i = 0; i < len; i++) {
-        data.items.push((Math.random() * 100) >> 0)
+      for (i = 0; i < len; i += 1) {
+        data.items.push((Math.random() * 10) >> 0)
       }
       vd.data = data;
     }
+    btn.onclick();
   </script>
 </body>
 </html>
