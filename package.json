@@ -1,0 +1,38 @@
+{
+  "name": "template-vd",
+  "version": "0.0.1",
+  "description": "A template webcomponents based on virtual dom.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoukekestar/template-vd.git"
+  },
+  "keywords": [
+    "webcomponents",
+    "template",
+    "virtual-dom"
+  ],
+  "author": "zhoukekestar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhoukekestar/template-vd/issues"
+  },
+  "homepage": "https://github.com/zhoukekestar/template-vd#readme",
+  "devDependencies": {
+    "eslint": "^3.16.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-pug": "^1.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "html2hscript": "^2.0.1"
+  },
+  "dependencies": {
+    "virtual-dom": "^2.1.1"
+  }
+}

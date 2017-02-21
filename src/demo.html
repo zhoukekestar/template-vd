@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>template-vd demo</title>
+  <script src='index.js'></script>
+</head>
+<body>
+  <button id="btn">btn</button>
+  <template-vd id='vd'>
+    <ul><li repeat='item, index in items'>{{index}}:{{item}}</li></ul>
+  </template-vd>
+
+  <script>
+    btn.onclick = function() {
+      var data = { items: [] }
+        , i = 0
+        , len = (Math.random() * 5 + 5) >> 0
+
+      for (var i = 0; i < len; i++) {
+        data.items.push((Math.random() * 100) >> 0)
+      }
+      vd.data = data;
+    }
+  </script>
+</body>
+</html>
