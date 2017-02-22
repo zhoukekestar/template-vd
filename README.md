@@ -6,7 +6,7 @@ A template webcomponets based on virtual dom.
 # How to dev
 * `npm install watchify -g`
 * `cd src && watchify index.es -o index.js`
-* `server .`
+* `serve .`
 * Go `http://localhost/demo.html`
 
 # Quick Start
