@@ -9413,7 +9413,11 @@ function isArray(obj) {
 
 },{}],90:[function(require,module,exports){
 !(function() {
+
+  // https://github.com/vuejs/vue/blob/dev/src/compiler/parser/html-parser.js
+  // parser 可参考http://erik.eae.net/simplehtmlparser/simplehtmlparser.js
   const parser = require('./parser.js');
+
   const h = require('virtual-dom/h');
   const diff = require('virtual-dom/diff');
   const patch = require('virtual-dom/patch');

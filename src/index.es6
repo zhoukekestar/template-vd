@@ -1,9 +1,17 @@
 !(function() {
+
+  // https://github.com/vuejs/vue/blob/dev/src/compiler/parser/html-parser.js
+  // parser 可参考http://erik.eae.net/simplehtmlparser/simplehtmlparser.js
   const parser = require('./parser.js');
+
   const h = require('virtual-dom/h');
   const diff = require('virtual-dom/diff');
   const patch = require('virtual-dom/patch');
   const createElement = require('virtual-dom/create-element');
+
+  const proxyHandler = {
+    
+  }
 
   const proto = Object.create(HTMLElement.prototype);
   proto.createdCallback  = function() {
